@@ -1,0 +1,149 @@
+body {
+    background-image: url(../images/silver.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    cursor: default;
+
+    font-family: 'TTNormsBlack';
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding-bottom: 65px;
+}
+
+/* All buttons have a hover effect which shows a small CSS entity */
+button {
+    cursor: pointer;
+    background-color: #5CD85A;
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.5s;
+
+    font-size: 16px;
+    font-family: 'TTNormsBlack';
+    font-weight: bold;
+    font-style: normal;
+    margin: 5px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\25C0';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+
+#buttonEdit span:after{
+    content: '\270E';
+}
+
+#buttonSubmit span:after {
+    content: '\2714';
+}
+
+#buttonCancel span:after {
+    content: '\2716';
+}
+
+button:hover span {
+    padding-left: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+#buttonSubmit, #buttonCancel {
+    background-color: white;
+}
+
+p {
+    font-size: 20px;
+}
+
+.teamHeading {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.teamItem {
+    text-align: center;
+    background-color: white;
+    border: 5px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: background-color 0.35s;
+}
+
+.teamItem:hover{
+    background-color: #5CD85A;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: initial;
+}
+
+#imageController {
+    margin: 0;
+    vertical-align:text-bottom
+}
+
+#title { 
+    text-align: center;
+    font-family: 'ClickuperRegular';
+    font-weight: bold;
+    font-style: normal;
+    color: #08313A;
+	font-size: 90px;
+	-webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #5CD85A;
+    text-shadow: 10px 10px 10px white;
+    margin: 0;
+}
+
+#layout {
+    display: grid;
+    justify-content: center;
+    align-content: center;  
+    gap: 4px;
+    grid-auto-flow: column;
+}
+
+#team {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 15px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #5CD85A;
+}
+
+#plays {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #5CD85A;
+}
